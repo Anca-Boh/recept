@@ -1,5 +1,13 @@
+
+
+@font-face {
+    font-family: "mojepismo";
+    src: url(https://fonts.google.com/specimen/Young+Serif)
+}
+
+
 body {
-        font-family: Georgia, serif;
+        font-family: "Mojepismo";
         background-color: #f3e5d8;
         display: flex;
         flex-direction: column;
@@ -16,6 +24,16 @@ body {
         box-shadow: 0 5px 15px rgba(0,0,0,0.1);
     }
 
+        .vnitrni{
+            background: hsl(30, 54%, 90%);
+            align-self: center;
+            width: 550px;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+
 
     h1 {
         font-size: 32px;
@@ -28,12 +46,12 @@ body {
         color: hsl(14, 45%, 36%);
         }
 
-    .priprava {
-        color: hsl(332, 51%, 32%);
+    ol li::marker{
+        color: hsl(14, 45%, 36%);
     }
 
-    .priprava_text li::marker{
-        color: hsl(332, 51%, 32%);
+    ul li::marker{
+        color: hsl(14, 45%, 36%);
     }
 
     ul, ol {
@@ -45,17 +63,20 @@ body {
         width: 100%;
         border-collapse: collapse;
         margin-top: 10px;
+        font-size: 16px;
     }
 
     .nutrition-table td {
         padding: 8px 0;
         border-bottom: 1px solid #ddd;
+        font-size: 16px;
     }
 
 
     .nutrition-table td:last-child {
         text-align: right;
         font-weight: bold;
+        font-size: 16px;
     }
 
 
@@ -65,7 +86,6 @@ body {
         width: 100%;
     }
 
-
-    .cislo {
+    .cislo{
         color: hsl(14, 45%, 36%);
     }
